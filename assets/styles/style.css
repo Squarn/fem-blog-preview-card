@@ -1,0 +1,138 @@
+:root {
+    --bg : hsl(47, 88%, 63%);
+    --white : hsl(0, 0%, 100%);
+    --grey : hsl(0, 0%, 50%);
+    --black : hsl(0, 0%, 7%);
+
+    --fontsmall : .9em;
+    --fontmed : 1em;
+    --fontlarge : 1.68em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+    font-size: var(--fontmed);
+    background-color: var(--bg);
+    color: var(--black);
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    margin: 0 auto;
+    width: 380px;
+    padding: 20px;
+    -webkit-box-shadow: 9px 9px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 0px 0px rgba(0,0,0,1);
+    box-shadow: 9px 9px 0px 0px rgba(0,0,0,1);
+    background-color: var(--white); 
+    transition: .1s;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.category {
+    padding: 6px 13px;
+    margin: 1.5em 0 1em 0;
+    width: fit-content;
+
+    font-size: var(--fontsmall);
+    background-color: var(--bg);
+    font-weight: 800;
+}
+
+h1 {
+    font-size: var(--fontlarge)
+}
+
+.summary p {
+    font-weight: 400;
+    font-size: var(--fontmed);
+    color: var(--grey);
+    line-height: 150%;
+    letter-spacing: .02em;
+}
+
+.date {
+    font-size: var(--fontsmall)
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.author-section img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: var(--fontsmall);
+}
+
+h1 a:hover {
+    color: var(--bg);
+}
+
+.card:hover {
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+    transition: .1s;
+}
+
+.rounded-large {
+    border-radius: 20px;
+}
+
+.rounded-medium {
+    border-radius: 10px;
+}
+
+.rounded-small {
+    border-radius: 5px;
+}
+
+.border {
+    border: 1px solid #000;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: 375px) {
+    :root {
+        --fontsmall : .8em;
+        --fontmed : 1.05em;
+        --fontlarge : 1.6em;
+    }
+
+    .card {
+        width: 325px;
+    }
+
+    .summary p {
+        font-size: .8em;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+}
