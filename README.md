@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL Incoming](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/blog-card-preview-YEldnmhoWW)
 - Live Site URL: [Live URL](https://squarn.github.io/fem-blog-preview-card/)
 
 ### What I learned
