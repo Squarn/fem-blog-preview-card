@@ -85,7 +85,7 @@ a:link, a:visited, a:active {
     font-size: var(--fontsmall);
 }
 
-h1 a:hover {
+a:hover {
     color: var(--bg);
 }
 
